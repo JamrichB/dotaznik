@@ -1,0 +1,138 @@
+html{
+    display: inline-block;
+    --black:#0D0D0D;
+    --white: #F2F2F2;
+    --rose: #D9B2A9;
+    --darker_blue: #2A708C;
+    --lighter_blue: #CEDEF2;
+}
+
+body{
+    font-family:'Source Sans Pro',sans-serif;
+    font-weight: 300;
+    height: 100rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem 0 0 0;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 300;
+}
+
+h2{
+    text-align: center;
+    margin: 1rem 0 5rem 0;
+    font-weight: 100;
+    letter-spacing: .4rem;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+ ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+}
+
+li{
+    height: 2rem;
+    margin: .3rem;
+    width: 18rem;
+    padding: .5rem 1rem 0 1rem;
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+p{
+    font-size: 1.3rem;
+}
+
+.active{
+    color: var(--white);
+    background-color: var(--darker_blue);
+}
+
+.active_emoji{
+    background-color: var(--darker_blue);
+}
+
+.imgQ{
+    margin-left: 2rem;
+}
+
+.imgQ ul{
+    flex-direction: row;
+    
+}
+.imgQ li{
+    width: 40%;
+    height: 3rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+.imgQ li i{
+    font-size: 2rem;
+}
+
+.imgQ li:hover{
+    margin-top: .5rem;
+}
+
+.button{
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    font-weight: 500;
+    color: var(--darker_blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 0 0 4.5rem;
+    margin: 3rem 0 0 2.3rem;
+}
+
+
+ul li:hover,
+.button:hover{
+    color: var(--white);
+    background-color: var(--darker_blue);
+}
+
+#resultContent{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+#resultContent h1{
+    margin: 4rem  0 2rem 3rem;
+}
+#resultContent p{
+    position: absolute;
+    margin: 2rem 0 0 38rem;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+

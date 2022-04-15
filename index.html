@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dotazník</title>
+</head>
+<body> 
+    <h1>Dotazník</h1>
+    <h2>o tvojom mentálnom zdraví</h2>
+    <div class="main">
+        <div id="firstQ" class="fourQ">
+            <p>Aké bolo tvoje dnešné ráno?</p>
+            <ul>
+                <li>Super, hneď som bol pripravený do dňa</li>
+                <li>Dobre, ako každé ráno</li>
+                <li>V pohode</li>
+                <li>Bolo to už aj lepšie</li>
+                <li>Horšie ráno som ešte nemal</li>
+            </ul>
+        </div>
+
+        <div id="secQ"  class="fourQ">
+            <p>Darilo sa ti dnes v práci?</p>
+            <ul>
+                <li>Áno všetko šlo ako po masle</li>
+                <li>Až na pár drobností super</li>
+                <li>Dalo sa</li>
+                <li>Nabudúce to bude lepšie</li>
+                <li>Čo som chytil do rúk to som pokazil</li>
+            </ul>
+        </div>
+
+        <div id="thQ" class="threeQ">
+            <p>Mal si dnes čas na svoju obľúbenú aktivitu?</p>
+            <ul>
+                <li>Áno</li>
+                <li>Chvíľu</li>
+                <li>Aj hej ale nechcelo sa mi</li>
+                <li>Vôbec</li>
+                <li>Nemám obľúbenú aktivitu</li>
+            </ul>
+        </div>
+        <div id="frQ"  class="imgQ">
+            <p>Tvoja nálada dnes:</p>
+            <ul>
+                <li><i class="fa-solid fa-face-grin-beam"></i></li>
+                <li><i class="fa-solid fa-face-smile"></i></li>
+                <li><i class="fa-solid fa-face-meh"></i></li>
+                <li><i class="fa-solid fa-face-frown-open"></i></li>
+                <li><i class="fa-solid fa-face-frown"></i></li>
+            </ul>
+        </div>
+        <div class="button" onclick="getResult()">
+           poslať
+        </div>
+    </div>
+    <div id="resultContent">
+        <h1>Tvoj výsledok</h1>
+        <p id="resultText">Vysledok</p> 
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
